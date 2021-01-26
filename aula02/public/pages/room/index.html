@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Clone - EW</title>
+
+    <link rel="stylesheet" href="./deps/bootstrap.min.css" />
+    <link rel="stylesheet" href="./deps/style.css" />
+
+    <script src="./deps/font-awesome/font-awesome.js"></script>
+    <script defer src="./deps/peerjs.min.js"></script>
+    <script src="./deps/socket.io.min.js" defer></script>
+
+    
+    <script src="src/util/util.js" defer></script>
+    <script src="src/util/media.js" defer></script>
+    <script src="src/util/socket.js" defer></script>
+    <script src="src/util/peer.js" defer></script>
+    <script src="src/view.js" defer></script>
+    <script src="src/business.js" defer></script>
+    <script src="src/app.js" defer></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__left">
+        <div class="main__videos">
+          <div id="video-grid"></div>
+        </div>
+        <div class="main__controls ">
+          <div class="main__controls__block disabled">
+            <div class="main__controls__button main__mute_button">
+              <i class="fas fa-microphone"></i>
+              <span>Mute</span>
+            </div>
+            <div class="main__controls__button main__video_button">
+              <i class="fas fa-video"></i>
+              <span>Stop Video</span>
+            </div>
+          </div>
+          <div class="main__controls__block">
+            <div class="main__controls__button">
+              <i class="fas fa-user-friends badge-wrapper" title="Participants">
+                <span class="badge badge-secondary" id="participants">1</span>
+              </i>
+            </div>
+            <div class="main__controls__button disabled" >
+              <i class="fas fa-comment-alt" title="Chat"></i>
+              <span>Chat</span>
+            </div>
+            <!-- <div
+              id="shareScreen"
+              class="main__controls__button btn btn-success disabled"
+            >
+              <i class="fas fa-arrow-up" title="Share Screen"></i>
+              <span>Share Screen</span>
+            </div> -->
+            <div id="record" class="main__controls__button" >
+              <i class="fa fa-circle-o" title="Record"></i>
+              <span>Record</span>
+            </div>
+            <div class="main__controls__button disabled" >
+              <i class="fas fa fa-smile-o" title="Reactions"></i>
+              <span>Reactions</span>
+            </div>
+          </div>
+          <div class="main__controls__block">
+            <div class="main__controls__button">
+              <button id="leave" type="button" class="btn btn-danger">
+                End
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__right">
+        <div class="main__header">
+          <h6>Chat</h6>
+        </div>
+        <div class="main__chat_window">
+          <ul class="messages"></ul>
+        </div>
+        <div class="main__message_container">
+          <input
+            id="chat_message"
+            type="text"
+            placeholder="Type message here..."
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

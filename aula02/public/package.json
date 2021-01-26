@@ -1,0 +1,17 @@
+{
+  "name": "zoom-clone-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "http-server": "0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx http-server --cors .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "erickwendel",
+  "license": "MIT"
+}
