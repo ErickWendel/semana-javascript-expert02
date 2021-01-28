@@ -7,5 +7,5 @@ Para cada dia, o código fonte completo da aula será adicionado aqui
 
 - [Aula 01](./aula01)
 - [Aula 02](./aula02)
-- Aula 03
+- [Aula 03](./aula03)
 - Aula 04
